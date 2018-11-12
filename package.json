@@ -1,0 +1,19 @@
+{
+  "name": "petter.space",
+  "version": "1.0.0",
+  "description": "I need my space",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "petter",
+    "personal",
+    "space"
+  ],
+  "author": "Petter Hareim",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack-dev-server": "^3.1.10"
+  }
+}
