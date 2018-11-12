@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Space+Mono');
 
-body{
+body {
   font-family: 'Space Mono', monospace;
 }
 
@@ -8,10 +8,13 @@ header {
   width: 100%;
   display: grid;
   grid-column: auto;
+  grid-row: 8em auto 8em;
   grid-gap: 1em;
-  background-color: aqua;
 }
+
 header h1 {
   grid-column: 1;
   grid-row: 1;
+  text-align: center;
+  font-size: 10vmax;
 }

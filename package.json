@@ -1,10 +1,13 @@
 {
   "name": "petter.space",
   "version": "1.0.0",
+  "repository": "https://github.com/phareim/petter.space",
   "description": "I need my space",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "live-server",
+    "deploy": "now",
+    "deploy:prod": "now && now alias"
   },
   "keywords": [
     "petter",
@@ -14,6 +17,6 @@
   "author": "Petter Hareim",
   "license": "ISC",
   "devDependencies": {
-    "webpack-dev-server": "^3.1.10"
+    "jshint": "^2.9.6"
   }
 }
