@@ -1,3 +1,3 @@
 module.exports = (req, res) => {
-  res.end(`Frøken ur sier: ${Date.now()}.`);
-}
+	res.end({ frøken_ur_sier: `${Date.now()}` });
+};

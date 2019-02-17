@@ -1,53 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Space+Mono');
 
 body {
-  background-color: white;
-  font-family: 'Space Mono', monospace;
+	background-color: white;
+	font-family: 'Space Mono', monospace;
 }
 
 @keyframes pulse {
-  0% {
-    color: rgb(0, 0, 0);
-  }
-
-
-  20% {
-    color: rgb(10, 30, 50);
-  }
-
-
-  40% {
-    color: rgb(10, 30, 10);
-  }
-
-  60% {
-    color: rgb(0, 10, 40);
-  }
-
-
-  80% {
-    color: rgb(20, 20, 30);
-  }
-
-
-  100% {
-    color: rgb(0, 0, 0);
-  }
+	0% {
+		color: rgb(0, 0, 0);
+	}
+	50% {
+		color: rgb(20, 60, 120);
+	}
+	100% {
+		color: rgb(0, 0, 0);
+	}
 }
 
 header {
-  width: 100%;
-  display: grid;
-  grid-column: auto;
-  grid-row: 8em auto 8em;
-  grid-gap: 1em;
+	width: 100%;
+	display: grid;
+	grid-column: auto;
+	grid-row: auto;
+	grid-gap: 1em;
 }
 
 header h1 {
-  color: white;
-  grid-column: 1;
-  grid-row: 1;
-  text-align: center;
-  font-size: 10vw;
-  animation: pulse 24s infinite;
+	color: white;
+	grid-column: 1;
+	grid-row: 1;
+	text-align: center;
+	font-size: 6vw;
+	animation: pulse 12s infinite;
 }
