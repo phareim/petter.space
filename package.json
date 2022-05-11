@@ -1,0 +1,25 @@
+{
+  "name": "petter.space",
+  "version": "3.0.0",
+  "description": "Making bad art",
+  "main": "index.html",
+  "scripts": {
+    "build": "cp *.html ./public && cp *.js ./public && cp *.css ./public",
+    "test": "tests passed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phareim/petter.space.git"
+  },
+  "keywords": [
+    "homepage",
+    "bad",
+    "art"
+  ],
+  "author": "Petter Hareim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phareim/petter.space/issues"
+  },
+  "homepage": "https://github.com/phareim/petter.space#readme"
+}
