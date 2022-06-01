@@ -474,10 +474,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-.inline-block{
-  display: inline-block;
-}
-
 .grid{
   display: grid;
 }
@@ -490,18 +486,25 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
+@-webkit-keyframes move-bg{
+  to{
+    background-position: 400% 0;
+  }
+}
+
+@keyframes move-bg{
+  to{
+    background-position: 400% 0;
+  }
+}
+
+.animate-move-bg{
+  -webkit-animation: move-bg 16s infinite linear;
+          animation: move-bg 16s infinite linear;
+}
+
 .content-center{
   align-content: center;
-}
-
-.bg-blue-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
-}
-
-.bg-slate-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
 
 .bg-slate-800{
@@ -513,24 +516,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
-.from-indigo-500{
-  --tw-gradient-from: #6366f1;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(99 102 241 / 0));
-}
-
-.from-indigo-300{
-  --tw-gradient-from: #a5b4fc;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(165 180 252 / 0));
-}
-
-.from-indigo-400{
-  --tw-gradient-from: #818cf8;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(129 140 248 / 0));
-}
-
 .from-lime-400{
   --tw-gradient-from: #a3e635;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(163 230 53 / 0));
+}
+
+.from-blue-400{
+  --tw-gradient-from: #60a5fa;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(96 165 250 / 0));
 }
 
 .via-pink-500{
@@ -541,32 +534,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-stops: var(--tw-gradient-from), #9d174d, var(--tw-gradient-to, rgb(157 23 77 / 0));
 }
 
-.to-indigo-500{
-  --tw-gradient-to: #6366f1;
+.via-lime-500{
+  --tw-gradient-stops: var(--tw-gradient-from), #84cc16, var(--tw-gradient-to, rgb(132 204 22 / 0));
 }
 
-.to-indigo-300{
-  --tw-gradient-to: #a5b4fc;
+.via-pink-300{
+  --tw-gradient-stops: var(--tw-gradient-from), #f9a8d4, var(--tw-gradient-to, rgb(249 168 212 / 0));
 }
 
 .to-lime-400{
   --tw-gradient-to: #a3e635;
 }
 
+.to-blue-400{
+  --tw-gradient-to: #60a5fa;
+}
+
 .bg-\[length\:400\%\]{
   background-size: 400%;
-}
-
-.bg-\[length\:200\%\]{
-  background-size: 200%;
-}
-
-.bg-\[length\:50\%\]{
-  background-size: 50%;
-}
-
-.bg-\[length\:100\%\]{
-  background-size: 100%;
 }
 
 .bg-\[length\:300\%\]{
@@ -582,20 +567,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center;
 }
 
-.align-middle{
-  vertical-align: middle;
-}
-
-.text-8xl{
-  font-size: 6rem;
-  line-height: 1;
-}
-
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-9xl{
   font-size: 8rem;
   line-height: 1;
@@ -603,11 +574,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-bold{
   font-weight: 700;
-}
-
-.text-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-transparent{
