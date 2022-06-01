@@ -503,6 +503,13 @@ Ensure the default browser behavior of the `hidden` attribute.
           animation: move-bg 16s infinite linear;
 }
 
+.select-none{
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .content-center{
   align-content: center;
 }
@@ -510,6 +517,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-slate-800{
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+
+.bg-stone-800{
+  --tw-bg-opacity: 1;
+  background-color: rgb(41 37 36 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r{
@@ -524,6 +536,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .from-blue-400{
   --tw-gradient-from: #60a5fa;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(96 165 250 / 0));
+}
+
+.from-indigo-500{
+  --tw-gradient-from: #6366f1;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(99 102 241 / 0));
 }
 
 .via-pink-500{
@@ -548,6 +565,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .to-blue-400{
   --tw-gradient-to: #60a5fa;
+}
+
+.to-indigo-500{
+  --tw-gradient-to: #6366f1;
 }
 
 .bg-\[length\:400\%\]{
@@ -578,4 +599,84 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-transparent{
   color: transparent;
+}
+
+.hover\:cursor-none:hover{
+  cursor: none;
+}
+
+.hover\:cursor-wait:hover{
+  cursor: wait;
+}
+
+.hover\:cursor-pointer:hover{
+  cursor: pointer;
+}
+
+.hover\:from-blue-400:hover{
+  --tw-gradient-from: #60a5fa;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(96 165 250 / 0));
+}
+
+.hover\:from-indigo-600:hover{
+  --tw-gradient-from: #4f46e5;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(79 70 229 / 0));
+}
+
+.hover\:via-pink-400:hover{
+  --tw-gradient-stops: var(--tw-gradient-from), #f472b6, var(--tw-gradient-to, rgb(244 114 182 / 0));
+}
+
+.hover\:via-pink-600:hover{
+  --tw-gradient-stops: var(--tw-gradient-from), #db2777, var(--tw-gradient-to, rgb(219 39 119 / 0));
+}
+
+.hover\:to-blue-400:hover{
+  --tw-gradient-to: #60a5fa;
+}
+
+.hover\:to-indigo-600:hover{
+  --tw-gradient-to: #4f46e5;
+}
+
+.active\:top-1:active{
+  top: 0.25rem;
+}
+
+.active\:cursor-pointer:active{
+  cursor: pointer;
+}
+
+.active\:from-indigo-200:active{
+  --tw-gradient-from: #c7d2fe;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(199 210 254 / 0));
+}
+
+.active\:from-indigo-300:active{
+  --tw-gradient-from: #a5b4fc;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(165 180 252 / 0));
+}
+
+.active\:via-pink-200:active{
+  --tw-gradient-stops: var(--tw-gradient-from), #fbcfe8, var(--tw-gradient-to, rgb(251 207 232 / 0));
+}
+
+.active\:via-pink-300:active{
+  --tw-gradient-stops: var(--tw-gradient-from), #f9a8d4, var(--tw-gradient-to, rgb(249 168 212 / 0));
+}
+
+.active\:to-indigo-200:active{
+  --tw-gradient-to: #c7d2fe;
+}
+
+.active\:to-indigo-300:active{
+  --tw-gradient-to: #a5b4fc;
+}
+
+.active\:font-extrabold:active{
+  font-weight: 800;
+}
+
+.active\:font-normal:active{
+  font-weight: 400;
 }
