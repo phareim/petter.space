@@ -4,10 +4,12 @@
   "description": "Making bad art",
   "main": "index.html",
   "scripts": {
-     "build": "cp *.html ./public && cp main.js ./public && cp styles.css ./public && cp -R ./img ./public",
-     "dev":"npm run build",
-     "vercel-dev": "vercel dev",
-    "test": "echo tests passed"
+    "build": "cp *.html ./public && cp main.js ./public && cp styles.css ./public && cp -R ./img ./public",
+    "dev":"npm run build",
+    "vercel-dev": "vercel dev",
+    "test": "echo tests passed",
+    "tailwind-dev": "npx tailwindcss -i ./input.css -o ./styles.css --watch",
+    "local-dev": "live-server"
   },
   "repository": {
     "type": "git",
