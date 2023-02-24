@@ -1,6 +1,6 @@
 const fetch = require('node-fetch');
 
-module.exports = async (req, res) => {
+export default async function handler(req, res) {
 	try {
 		const response = await fetch('https://uselessfacts.jsph.pl/api/v2/facts/random?language=en');
 		const data = await response.json();
